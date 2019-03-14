@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jkslw.dao.GoodsDao">
+
+
+	<select id="getGoods" resultType="java.util.Map">
+		SELECT * FROM goods g,order_info oi where g.goods_id=oi.goods_id
+	</select>
+
+	<select id="getGoodslIst" resultType="java.util.Map">
+		SELECT * FROM goods limit 0,5
+	</select>
+
+	<select id="getGoodsGroupList" resultType="java.util.Map">
+		SELECT * FROM goods_group
+	</select>
+
+	<select id="getGoodsAdlIst" resultType="java.util.Map">
+		SELECT * FROM ad_list
+	</select>
+
+	<!--<select id="getUser" parameterType="java.lang.String" resultType="com.dd.wx.model.User">-->
+		<!--SELECT * FROM user WHERE ID = #{id}-->
+	<!--</select>-->
+
+
+	<!--<insert id="insertUser" parameterType="com.dd.wx.model.User">-->
+		<!--INSERT INTO user (ID, NAME, AGE, SEX, MOBILE)-->
+		<!--VALUES(#{id}, #{name}, #{age}, #{sex}, #{mobile})-->
+	<!--</insert>-->
+
+
+	<!--<select id="getUserInfo" resultType="java.util.Map">-->
+         <!--select * from `user` u, `usernew` n where u.id=n.user_id-->
+     <!--</select>-->
+
+
+	<!--<select id="userInfo" parameterType="java.lang.String" resultType="java.util.Map">-->
+		<!--SELECT * FROM user WHERE ID = #{user_id}-->
+	<!--</select>-->
+
+	<!--&lt;!&ndash;更新一条数据&ndash;&gt;-->
+	<!--<update id="doupdate"  parameterType="java.lang.String">-->
+ 		<!--update user SET name=#{name},mobile=#{mobile} where id=#{id}-->
+	<!--</update>-->
+
+</mapper>
