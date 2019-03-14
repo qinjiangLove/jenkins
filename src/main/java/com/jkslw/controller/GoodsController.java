@@ -37,13 +37,10 @@ public class GoodsController {
     private GoodsService goodsService;
 
     @RequestMapping
-    public ModelAndView index(){
+    @ResponseBody
+    public String index(){
 
-        ModelAndView result = new ModelAndView("welcome");
-
-        result.addObject("first","123456");
-
-        return result;
+        return new StringBuilder("hello world!").toString();
 
     }
     @GetMapping("/index")
