@@ -136,7 +136,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>GOODS</finalName>
+        <finalName>goods</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
