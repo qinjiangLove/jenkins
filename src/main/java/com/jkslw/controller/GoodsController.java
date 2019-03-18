@@ -40,7 +40,7 @@ public class GoodsController {
     @ResponseBody
     public String index(){
 
-        return new StringBuilder("hello world!").toString();
+        return new StringBuilder("hello world! 123").toString();
 
     }
 
