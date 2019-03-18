@@ -43,11 +43,18 @@ public class GoodsController {
         return new StringBuilder("hello world!").toString();
 
     }
+
+
     @GetMapping("/index")
     @ResponseBody
-    public List indexList(){
-        return goodsService.getGoodslIst();
+    public String indexList(){
+        return "index";
     }
+//    @GetMapping("/index")
+//    @ResponseBody
+//    public List indexList(){
+//        return goodsService.getGoodslIst();
+//    }
 
 //    public static TransportClient client() throws UnknownHostException {
 //        Settings settings = Settings.builder()
