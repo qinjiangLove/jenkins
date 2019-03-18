@@ -33,8 +33,8 @@ import java.util.Map;
 @Controller
 public class GoodsController {
 
-    @Autowired
-    private GoodsService goodsService;
+//    @Autowired
+//    private GoodsService goodsService;
 
     @RequestMapping
     @ResponseBody
